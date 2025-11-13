@@ -28,6 +28,12 @@
 
   <!-- Main CSS File -->
   <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkTt72DAkP57nIMIDvRlqR4xAbcz8rS+X3T+Jz0z7C8p2e2dtTQ3r3r0A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+
 </head>
 
 <body class="index-page">
@@ -245,7 +251,7 @@
 
               <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
                 <div class="image-container">
-                  <img src="img/about/about-square-8.webp" alt="About Us" class="img-fluid">
+                  <img src="img/about/about-square-8.png" alt="About Us" class="img-fluid">
                   <div class="image-overlay">
                     <div class="overlay-content">
                       <i class="bi bi-award"></i>
@@ -272,8 +278,7 @@
           </div>
 
           <div class="container">
-            <div class="row gy-4">
-              <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div data-aos="fade-up" data-aos-delay="100">
                 <div class="team-photo-container reveal" aria-label="Synergia Team">
 
       <img src="logoscs/people.svg" alt="Synergia Team" class="team-photo" />
@@ -317,7 +322,6 @@
       </button>
     </div>
               </div>
-            </div>
           </div>
         </section>
       `,
@@ -363,7 +367,7 @@
 .media-logos img {
   width: 100%;
   max-width: 250px;
-  height: 80px;
+  height: 150px;
   object-fit: contain;
   transition: transform 0.3s;
 }
@@ -385,7 +389,7 @@
     <div class="grid" style="display:flex; justify-content:center; align-items:center;">
       <a href="https://www.humble-giant.com/megascreen" target="_blank" rel="noopener noreferrer" style="text-align:center;">
         <img src="services/humble-giant.png" alt="Publishers International Logo"
-             style="height:80px; object-fit:contain; transition:transform 0.3s;"
+             style="height:150px; object-fit:contain; transition:transform 0.3s;"
              onmouseover="this.style.transform='scale(1.05)';"
              onmouseout="this.style.transform='scale(1)';">
       </a>
@@ -453,68 +457,53 @@
       <div class="animate-slide-up" style="animation-delay: 0.2s;">
         <div class="space-y-8">
 
-          <!-- Headquarters -->
-          <div class="bg-white p-6 rounded-lg shadow-lg">
-            <div class="flex items-start">
-              <div class="bg-brand-red text-white p-3 rounded-lg mr-4">
-                <i class="fas fa-building text-xl" aria-hidden="true"></i>
-              </div>
-              <div>
-                <h3 class="text-lg font-bold text-gray-800 mb-2">Our office</h3>
-                <p class="text-gray-600">Arkadia Green Park<br>Tower G, 8th Fl<br>Jl. TB Simatupang kav. 88<br>Jakarta, 12520 - Indonesia</p>
-              </div>
-            </div>
-          </div>
+          <div class="contact-grid">
 
-          <!-- Phone -->
-          <div class="bg-white p-6 rounded-lg shadow-lg">
-            <div class="flex items-start">
-              <div class="bg-brand-red text-white p-3 rounded-lg mr-4">
-                <i class="fas fa-phone text-xl" aria-hidden="true"></i>
-              </div>
-              <div>
-                <h3 class="text-lg font-bold text-gray-800 mb-2">Telephone</h3>
-                <p class="text-gray-600">(+62) 21 2970 4009</p>
-              </div>
-            </div>
-          </div>
+  <div class="contact-card">
+    <div class="icon-box">
+      <i class="bi bi-building"></i>
+    </div>
+    <div>
+      <h3>Our office</h3>
+      <p>Arkadia Green Park Tower G, 8th Fl Jl. TB Simatupang kav. 88 Jakarta, 12520 - Indonesia</p>
+    </div>
+  </div>
 
+  <div class="contact-card">
+    <div class="icon-box">
+      <i class="bi bi-telephone"></i>
+    </div>
+    <div>
+      <h3>Telephone</h3>
+      <p>(+62) 21 2970 4009</p>
+    </div>
+  </div>
 
-          <!-- Email -->
-          <div class="bg-white p-6 rounded-lg shadow-lg">
-            <div class="flex items-start">
-              <div class="bg-brand-red text-white p-3 rounded-lg mr-4">
-                <i class="fas fa-envelope text-xl" aria-hidden="true"></i>
-              </div>
-              <div>
-                <h3 class="text-lg font-bold text-gray-800 mb-2">Email</h3>
-                <p class="text-gray-600">info@sinergicipta.com</p>
-              </div>
-            </div>
-          </div>
+  <div class="contact-card">
+    <div class="icon-box">
+      <i class="bi bi-envelope"></i>
+    </div>
+    <div>
+      <h3>Email</h3>
+      <p>info@sinergicipta.com</p>
+    </div>
+  </div>
 
+  <div class="contact-card">
+    <div>
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a><i class="bi bi-facebook"></i></a>
+        <a><i class="bi bi-instagram"></i></a>
+        <a><i class="bi bi-linkedin"></i></a>
+        <a><i class="bi bi-twitter-x"></i></a>
+        <a><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+  </div>
 
-          <!-- Social Media -->
-          <div class="bg-white p-6 rounded-lg shadow-lg">
-            <h3 class="text-lg font-bold text-gray-800 mb-4">Follow Us</h3>
-            <div class="flex space-x-4">
-              <a href="#" class="bg-brand-red text-white p-3 rounded-lg hover:bg-red-800 transition-colors duration-300" aria-label="Facebook">
-                <i class="fab fa-facebook-f text-lg" aria-hidden="true"></i>
-              </a>
-              <a href="#" class="bg-brand-red text-white p-3 rounded-lg hover:bg-red-800 transition-colors duration-300" aria-label="Instagram">
-                <i class="fab fa-instagram text-lg" aria-hidden="true"></i>
-              </a>
-              <a href="#" class="bg-brand-red text-white p-3 rounded-lg hover:bg-red-800 transition-colors duration-300" aria-label="LinkedIn">
-                <i class="fab fa-linkedin-in text-lg" aria-hidden="true"></i>
-              </a>
-              <a href="#" class="bg-brand-red text-white p-3 rounded-lg hover:bg-red-800 transition-colors duration-300" aria-label="Twitter">
-                <i class="fab fa-twitter text-lg" aria-hidden="true"></i>
-              </a>
-              <a href="#" class="bg-brand-red text-white p-3 rounded-lg hover:bg-red-800 transition-colors duration-300" aria-label="YouTube">
-                <i class="fab fa-youtube text-lg" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
+</div>
+
 
         </div>
       </div>
