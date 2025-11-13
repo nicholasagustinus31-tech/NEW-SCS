@@ -3164,6 +3164,23 @@ section,
   margin-top: 6px;
 }
 
+#contact .contact-card .icon-box i {
+  font-size: 26px;
+}
+
+#contact .contact-card .icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  background: #6e0712;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0; /* ini yang penting */
+}
+
+
 #contact .social-icons a {
   width: 48px;
   height: 48px;
@@ -3212,12 +3229,49 @@ section,
   padding-right: 32px;
 }
 
+/* Default: mobile 1 kolom */
+#contact .contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+
 /* Mobile tetap lebih kecil */
 @media (max-width: 768px) {
   #contact .contact-grid {
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+/* Card Google Maps */
+#contact .map-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+#contact .map-card iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  display: block;
+  border-radius: 16px;
+}
+
+/* Desktop: 2 kolom, map full width */
+@media (min-width: 992px) {
+  #contact .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #contact .map-card {
+    grid-column: 1 / -1; /* ambil 2 kolom */
+  }
+}
+
+#contact .contact-card .text-block {
+  max-width: 85%;
 }
 
 
