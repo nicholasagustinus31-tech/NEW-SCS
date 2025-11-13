@@ -4916,8 +4916,8 @@ section,
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  border-radius: 12px;
-  overflow: hidden;
+  /* border-radius bisa dihapus, cukup di gambar */
+  overflow: visible;
   box-shadow: 0 8px 20px rgba(0,0,0,.15);
   text-align: center;
 }
@@ -4927,8 +4927,9 @@ section,
   height: auto;
   display: block;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 12px; /* radius pindah ke sini */
 }
+
 
 @media (min-width: 1200px) {
   .team-photo-container {
