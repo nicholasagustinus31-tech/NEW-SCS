@@ -1238,6 +1238,10 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 10%);
 }
 
+.about .content .lead strong {
+  font-weight: 800;
+}
+
 .about .content .description {
   margin-bottom: 60px;
 }
