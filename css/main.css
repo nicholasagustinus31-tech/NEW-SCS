@@ -1231,6 +1231,30 @@ section,
   }
 }
 
+@media (max-width: 576px) {
+  .hero .cta-group {
+    text-align: center;
+  }
+
+  .hero .cta-group a {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero .content .cta-group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero .content .cta-group a {
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+
 .about .content .lead {
   font-size: 1.25rem;
   line-height: 1.7;
