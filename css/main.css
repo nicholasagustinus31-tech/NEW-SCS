@@ -14,7 +14,7 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "lucida fax";
+  --default-font: "Montserrat";
   --heading-font: "Montserrat",  sans-serif;
   --nav-font: "Open Sans",  sans-serif;
 }
